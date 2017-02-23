@@ -1,38 +1,38 @@
 [pack/plugins/start/vim-auto-save]
-checkout = git clone 'git@github.com:907th/vim-auto-save.git' 'vim-auto-save'
+checkout = git clone 'https://github.com/907th/vim-auto-save.git' 'vim-auto-save'
 
 [pack/plugins/start/ctrlp.vim]
-checkout = git clone 'git@github.com:ctrlpvim/ctrlp.vim.git' 'ctrlp.vim'
+checkout = git clone 'https://github.com/ctrlpvim/ctrlp.vim.git' 'ctrlp.vim'
 
 [pack/plugins/start/vim-sensible]
-checkout = git clone 'git@github.com:tpope/vim-sensible.git' 'vim-sensible'
+checkout = git clone 'https://github.com/tpope/vim-sensible.git' 'vim-sensible'
 
 [pack/plugins/start/vim-vinegar]
 checkout = git clone 'https://github.com/tpope/vim-vinegar.git' 'vim-vinegar'
 
 [pack/plugins/start/vim-fugitive]
-checkout = git clone 'git@github.com:tpope/vim-fugitive.git' 'vim-fugitive'
+checkout = git clone 'https://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
 
 [pack/plugins/start/vim-bbye]
-checkout = git clone 'git@github.com:moll/vim-bbye.git' 'vim-bbye'
+checkout = git clone 'https://github.com/moll/vim-bbye.git' 'vim-bbye'
 
 [pack/plugins/start/vim-eunuch]
-checkout = git clone 'git@github.com:tpope/vim-eunuch.git' 'vim-eunuch'
+checkout = git clone 'https://github.com/tpope/vim-eunuch.git' 'vim-eunuch'
 
 [pack/plugins/start/gruvbox]
-checkout = git clone 'git@github.com:morhetz/gruvbox.git' 'gruvbox'
+checkout = git clone 'https://github.com/morhetz/gruvbox.git' 'gruvbox'
 
 [pack/plugins/start/indentLine]
-checkout = git clone 'git@github.com:Yggdroot/indentLine.git' 'indentLine'
+checkout = git clone 'https://github.com/Yggdroot/indentLine.git' 'indentLine'
 
 [pack/plugins/start/YouCompleteMe]
-checkout = git clone 'git@github.com:Valloric/YouCompleteMe.git' 'YouCompleteMe'
+checkout = git clone 'https://github.com/Valloric/YouCompleteMe.git' 'YouCompleteMe'
 
 [pack/plugins/start/vim-surround]
-checkout = git clone 'git@github.com:tpope/vim-surround.git' 'vim-surround'
+checkout = git clone 'https://github.com/tpope/vim-surround.git' 'vim-surround'
 
 [pack/plugins/start/vim-repeat]
-checkout = git clone 'git@github.com:tpope/vim-repeat.git' 'vim-repeat'
+checkout = git clone 'https://github.com/tpope/vim-repeat.git' 'vim-repeat'
 
 [pack/plugins/start/inkpot]
-checkout = git clone 'git@github.com:ciaranm/inkpot.git' 'inkpot'
+checkout = git clone 'https://github.com/ciaranm/inkpot.git' 'inkpot'
