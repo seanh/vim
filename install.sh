@@ -40,7 +40,7 @@ make install
 sudo apt-get install -y ubuntu-minimal
 
 # FIXME: nodejs and npm need to be installed and configured.
-cd pack/plugins/start/YouCompleteMe/
+cd ../../pack/plugins/start/YouCompleteMe/
 sudo apt-get -y install build-essential cmake python-dev python3-dev golang-go
 git submodule update --init --recursive
 ./install.py --clang-completer --tern-completer --gocode-completer
