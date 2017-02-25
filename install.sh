@@ -32,7 +32,7 @@ git checkout `git tag | ag '^v' | tail -n 1`
             --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
             --enable-perlinterp=yes \
             --enable-luainterp=yes \
-            --enable-gui=gtk3 --enable-cscope --prefix=$HOME
+            --enable-gui=gtk2 --enable-cscope --prefix=$HOME
 make
 make install
 
