@@ -23,7 +23,8 @@ cd vim
 
 git checkout `git tag | ag '^v' | tail -n 1`
 
-./configure --with-features=huge \
+./configure --prefix=/usr/local \
+            --with-features=huge \
             --enable-multibyte \
             --enable-rubyinterp=yes \
             --enable-pythoninterp=yes \
@@ -32,9 +33,10 @@ git checkout `git tag | ag '^v' | tail -n 1`
             --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
             --enable-perlinterp=yes \
             --enable-luainterp=yes \
-            --enable-gui=gtk2 --enable-cscope --prefix=$HOME
+            --enable-gui=gtk2 \
+            --enable-cscope
 make
-make install
+sudo make install
 
 # This gets uninstalled by the apt-get remove command above, add it back.
 sudo apt-get install -y ubuntu-minimal
@@ -43,4 +45,4 @@ sudo apt-get install -y ubuntu-minimal
 cd ../../pack/plugins/start/YouCompleteMe/
 sudo apt-get -y install build-essential cmake python-dev python3-dev golang-go
 git submodule update --init --recursive
-./install.py --clang-completer --tern-completer --gocode-completer
+./install.py --tern-completer --gocode-completer
