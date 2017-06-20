@@ -1,2 +1,3 @@
-set guifont=Roboto\ Mono\ Regular\ 11
-colorscheme inkpot
+set guifont=Ubuntu\ Mono\ 15
+set background=light
+colorscheme gruvbox
