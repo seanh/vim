@@ -1,3 +1,4 @@
+set shortmess+=I   " Don't show startup message when you open vim with a filename.
 set nowrap
 set cursorline     " Highlight the current line.
 set guioptions-=m  " Remove the menu bar from gVim.
