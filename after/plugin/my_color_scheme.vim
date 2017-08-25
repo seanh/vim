@@ -6,8 +6,9 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set laststatus=1
 set termguicolors  " Make color schemes work properly in terminal vim.
-"let &colorcolumn=join(range(80,999),",")
+let &colorcolumn=join(range(80,999),",")
 set background=dark
 
-colorscheme dracula
-"highlight ColorColumn guibg=grey15
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_color_column='bg0'
+colorscheme gruvbox
