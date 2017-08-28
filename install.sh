@@ -7,7 +7,7 @@ set -e
 cd ~/.vim
 
 sudo apt-get -y install libncurses5-dev libgnome2-dev libgnomeui-dev \
-                        libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
+                        libgtk-3-dev libatk1.0-dev libbonoboui2-dev \
                         libcairo2-dev libx11-dev libxpm-dev libxt-dev \
                         python-dev python3-dev ruby-dev lua5.1 lua5.1-dev \
                         libperl-dev git myrepos
@@ -33,7 +33,7 @@ git checkout `git tag | ag '^v' | tail -n 1`
             --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
             --enable-perlinterp=yes \
             --enable-luainterp=yes \
-            --enable-gui=gtk2 \
+            --enable-gui=gtk3 \
             --enable-cscope
 make
 sudo make install
