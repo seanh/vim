@@ -1,3 +1,3 @@
 set guifont=Ubuntu\ Mono\ 15
-set background=light
+set background=dark
 colorscheme gruvbox
