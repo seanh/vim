@@ -34,5 +34,11 @@ checkout = git clone 'https://github.com/tpope/vim-surround.git' 'vim-surround'
 [pack/plugins/start/vim-repeat]
 checkout = git clone 'https://github.com/tpope/vim-repeat.git' 'vim-repeat'
 
-[pack/plugins/start/inkpot]
-checkout = git clone 'https://github.com/ciaranm/inkpot.git' 'inkpot'
+[pack/plugins/start/vim-hemisu]
+checkout = git clone 'https://github.com/noahfrederick/vim-hemisu.git' 'vim-hemisu'
+
+[pack/plugins/start/taboo.vim]
+checkout = git clone 'https://github.com/gcmt/taboo.vim.git' 'taboo.vim'
+
+[pack/plugins/start/auto-pairs]
+checkout = git clone 'https://github.com/jiangmiao/auto-pairs.git' 'auto-pairs'

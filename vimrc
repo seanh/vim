@@ -12,9 +12,10 @@ set noswapfile     " Don't leave annoying swap files around.
 set number         " Show line numbers.
 set showcmd        " Show the normal-mode command chord entered so far in the
                    " bottom-right corner.
-" Files that the wildmenu (e.g. tab-complete when typing an :e <path> command)
-" should ignore. CtrlP also uses this.
-set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*
+
+
+set lines=58
+set columns=176
 
 
 " Leader key
@@ -22,17 +23,34 @@ set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*
 let mapleader="\<CR>"
 
 
+" CtrlP
+" =====
+" Files that the wildmenu (e.g. tab-complete when typing an :e <path> command)
+" should ignore. CtrlP also uses this.
+set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*
+nnoremap <leader>n :CtrlP ~/notes<Enter>
+nnoremap <leader>N :e ~/notes<Enter>
+set shell=/bin/sh  " Fish causes problems with CtrlP.
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_switch_buffer = 'et'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35,results:35'
+let g:ctrlp_switch_buffer = '0'
+let g:ctrlp_match_current_file = 1
+nnoremap <leader>t :CtrlPTag<Enter>
+nnoremap <leader><Enter> :CtrlPBuffer<Enter>
+
+
 " Non-leader key mappings
 " =======================
-
 " Spacebar enters command mode.
 nnoremap <Space> :
-
 " Reflow a paragraph or a selected block with Q:
 nnoremap Q gqap
 vnoremap Q gq
-
-nnoremap <leader>w :w<Enter>:SyntasticCheck<Enter>
+nnoremap <c-?> :e ~/notes/vim.txt<CR>
 
 
 " Window sizes
@@ -40,12 +58,6 @@ nnoremap <leader>w :w<Enter>:SyntasticCheck<Enter>
 nnoremap <leader>1 :set lines=52 \| set columns=88<Enter>
 nnoremap <leader>2 :set lines=52 \| set columns=177<Enter>
 nnoremap <leader>3 :set lines=52 \| set columns=266<Enter>
-
-
-" Notes
-" -----
-nnoremap <leader>n :CtrlP ~/notes<Enter>
-nnoremap <leader>N :e ~/notes<Enter>
 
 
 " Clipboard and registers
@@ -58,7 +70,7 @@ nnoremap <leader>N :e ~/notes<Enter>
 " Warning: Things like deleting a single character with x will replace the
 " contents of your desktop clipboard with that single character.
 "
-" Tip: That Yank register ("0) always contains the last yanked text and is not
+" Tip: The Yank register ("0) always contains the last yanked text and is not
 " overwritten by change or delete commands. For example "0p to paste the last
 " yanked text.
 if has('unnamedplus')
@@ -82,6 +94,8 @@ set undolevels=1000000   " The number of changes to remember for undo
 set hlsearch
 set ignorecase
 set smartcase
+" Bind Alt+/ in Visual Mode to search within the selection only.
+vnoremap <M-/> <Esc>/\%V
 
 
 " Syntax highlighting
@@ -120,31 +134,12 @@ autocmd Filetype jinja2     setlocal expandtab tabstop=2 shiftwidth=2 softtabsto
 autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype python     setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd Filetype ruby       setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-
-
-" CtrlP
-" =====
-" <Ctrl-p> is the default mapping to launch CtrlP.
-set shell=/bin/sh  " fish causes problems with CtrlP.
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
-let g:ctrlp_working_path_mode = 'rw'
-let g:ctrlp_switch_buffer = 'et'
-map <c-b> :CtrlPBuffer<Enter>
-nnoremap <leader>t :CtrlPTag<Enter>
-nnoremap <leader>b :CtrlPBufTag<Enter>
-nnoremap <leader>a :CtrlPBufTagAll<Enter>
-nnoremap <leader>m :CtrlPMRU<Enter>
-nnoremap <leader><Enter> :CtrlPBuffer<Enter>
-map <c-c> :CtrlPClearAllCaches<Enter>
+autocmd Filetype vim        setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 
 " IndentLine
 " ==========
 let g:indentLine_enabled = 0
-
-map <C-y> :call yapf#YAPF()<cr>
 
 
 " YouCompleteMe
@@ -165,3 +160,39 @@ let g:ycm_filetype_blacklist = {
 let g:ycm_filetype_specific_completion_to_disable = {
       \ 'python': 1
       \}
+
+
+" Tabs
+" ====
+let g:taboo_tab_format=" %P (%W)%m "  " Use directory name as tab title.
+
+
+" Status Line
+" ===========
+set laststatus=2  " Always show the status line.
+set statusline=
+set statusline+=%f
+set statusline+=%m
+set statusline+=\ (%{fugitive#head(7)})
+set statusline+=%=
+set statusline+=%y
+
+
+" Theme
+" =====
+if has('gui_running')
+  set background=light
+  set guicursor+=a:blinkon0  " Disable all cursor blinking.
+  set guifont=Ubuntu\ Mono\ 13
+else
+  set termguicolors
+  set background=dark
+endif
+colorscheme hemisu
+let &colorcolumn=join(range(80,999),",")
+augroup colorscheme_customizations
+  autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn guibg=#010101 | else | highlight ColorColumn guibg=#fcfcfc | endif
+  autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer guifg=#000000 | else | highlight EndOfBuffer guifg=#ffffff | endif
+  autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine guibg=#000000 | endif
+  autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc | endif
+augroup END
