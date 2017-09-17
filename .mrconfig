@@ -42,3 +42,6 @@ checkout = git clone 'https://github.com/gcmt/taboo.vim.git' 'taboo.vim'
 
 [pack/plugins/start/auto-pairs]
 checkout = git clone 'https://github.com/jiangmiao/auto-pairs.git' 'auto-pairs'
+
+[pack/plugins/start/vim-lastplace]
+checkout = git clone 'https://github.com/farmergreg/vim-lastplace.git' 'vim-lastplace'
