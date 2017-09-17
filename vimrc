@@ -1,5 +1,8 @@
-set shortmess+=I   " Don't show startup message when you open vim with a filename.
-set nowrap
+set shortmess+=I   " Don't show startup message when you open vim with a
+                   " filename.
+set nowrap         " Don't soft wrap lines (scroll horizontally instead).
+set sidescroll=1   " Horizontally scroll one character at a time, instead of a
+                   " whole screen width at a time.
 set cursorline     " Highlight the current line.
 set guioptions-=m  " Remove the menu bar from gVim.
 set guioptions-=T  " Remove the toolbar from gVim.
