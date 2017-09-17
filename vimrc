@@ -15,35 +15,9 @@ set noswapfile     " Don't leave annoying swap files around.
 set number         " Show line numbers.
 set showcmd        " Show the normal-mode command chord entered so far in the
                    " bottom-right corner.
-
-
-set lines=58
-set columns=176
-
-
-" Leader key
-" ==========
-let mapleader="\<CR>"
-
-
-" CtrlP
-" =====
-" Files that the wildmenu (e.g. tab-complete when typing an :e <path> command)
-" should ignore. CtrlP also uses this.
-set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*
-nnoremap <leader>n :CtrlP ~/notes<Enter>
-nnoremap <leader>N :e ~/notes<Enter>
-set shell=/bin/sh  " Fish causes problems with CtrlP.
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-let g:ctrlp_working_path_mode = 'rw'
-let g:ctrlp_switch_buffer = 'et'
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35,results:35'
-let g:ctrlp_switch_buffer = '0'
-let g:ctrlp_match_current_file = 1
-nnoremap <leader>t :CtrlPTag<Enter>
-nnoremap <leader><Enter> :CtrlPBuffer<Enter>
+set history=10000  " The number of previous commands that are remembered.
+set mouse=a        " Enable the mouse in terminal vim.
+set showmatch      " Highlight matching brackets.
 
 
 " Non-leader key mappings
@@ -53,14 +27,36 @@ nnoremap <Space> :
 " Reflow a paragraph or a selected block with Q:
 nnoremap Q gqap
 vnoremap Q gq
-nnoremap <c-?> :e ~/notes/vim.txt<CR>
 
 
-" Window sizes
-" ------------
+" Leader key
+" ==========
+let mapleader="\<CR>"
+nnoremap <leader>n :CtrlP ~/notes<Enter>
+nnoremap <leader>N :e ~/notes<Enter>
+nnoremap <leader>t :CtrlPTag<Enter>
+nnoremap <leader><Enter> :CtrlPBuffer<Enter>
 nnoremap <leader>1 :set lines=52 \| set columns=88<Enter>
 nnoremap <leader>2 :set lines=52 \| set columns=177<Enter>
 nnoremap <leader>3 :set lines=52 \| set columns=266<Enter>
+nnoremap <leader>? :e ~/Dropbox/vim.txt<Enter>
+
+
+
+" CtrlP
+" =====
+" Files that the wildmenu (e.g. tab-complete when typing an :e <path> command)
+" should ignore. CtrlP also uses this.
+set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*
+set shell=/bin/sh  " Fish causes problems with CtrlP.
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_switch_buffer = 'et'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35,results:35'
+let g:ctrlp_switch_buffer = '0'
+let g:ctrlp_match_current_file = 1
 
 
 " Clipboard and registers
@@ -101,11 +97,6 @@ set smartcase
 vnoremap <M-/> <Esc>/\%V
 
 
-" Syntax highlighting
-" ===================
-set showmatch  " Highlight matching brackets.
-
-
 " Autocomplete
 " ============
 " Enable autocompletion of words from the dictionary.
@@ -118,8 +109,8 @@ set complete+=s       " Autocomplete from files in the `thesaurus` setting.
 
 " Autosave
 " ========
-let g:auto_save = 1
-let g:auto_save_in_insert_mode = 0
+let g:auto_save=1
+let g:auto_save_in_insert_mode=0
 
 
 " Filetype settings
@@ -142,7 +133,7 @@ autocmd Filetype vim        setlocal expandtab tabstop=2 shiftwidth=2 softtabsto
 
 " IndentLine
 " ==========
-let g:indentLine_enabled = 0
+let g:indentLine_enabled=0  " Do :IndentLinesEnable to show indent lines.
 
 
 " YouCompleteMe
@@ -188,14 +179,16 @@ if has('gui_running')
   set guicursor+=a:blinkon0  " Disable all cursor blinking.
   set guifont=Ubuntu\ Mono\ 13
 else
-  set termguicolors
   set background=dark
 endif
 colorscheme hemisu
 let &colorcolumn=join(range(80,999),",")
 augroup colorscheme_customizations
   autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn guibg=#010101 | else | highlight ColorColumn guibg=#fcfcfc | endif
+  autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn ctermbg=16 | else | highlight ColorColumn ctermbg=230 | endif
   autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer guifg=#000000 | else | highlight EndOfBuffer guifg=#ffffff | endif
+  autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer ctermfg=16 | else | highlight EndOfBuffer ctermfg=231 | endif
   autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine guibg=#000000 | endif
+  autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine ctermbg=16 | endif
   autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc | endif
 augroup END
