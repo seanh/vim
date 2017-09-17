@@ -167,7 +167,7 @@ set laststatus=2  " Always show the status line.
 set statusline=
 set statusline+=%f
 set statusline+=%m
-set statusline+=\ (%{fugitive#head(7)})
+set statusline+=\ %{fugitive#head(7)}
 set statusline+=%=
 set statusline+=%y
 
