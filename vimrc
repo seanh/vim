@@ -127,16 +127,19 @@ let g:auto_save_in_insert_mode=0
 " set tabstop=2 shiftwidth=2 softtabstop=2 makes Vim use two-column wide tabs,
 " or two spaces if expandtab is on, you always want these three to be the same.
 set expandtab tabstop=4 shiftwidth=4 softtabstop=4
-autocmd BufNewFile,BufRead *.jinja2   set filetype=jinja2
-autocmd Filetype css        setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype scss       setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype html       setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype jinja2     setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype python     setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
-autocmd Filetype ruby       setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype vim        setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-
+augroup filetype_customizations
+  if has('autocmd')
+    autocmd BufNewFile,BufRead *.jinja2   set filetype=jinja2
+    autocmd Filetype css        setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype scss       setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype html       setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype jinja2     setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype python     setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+    autocmd Filetype ruby       setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype vim        setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+  endif
+augroup END
 
 " IndentLine
 " ==========
@@ -191,11 +194,13 @@ endif
 colorscheme hemisu
 let &colorcolumn=join(range(80,999),",")
 augroup colorscheme_customizations
-  autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn guibg=#010101 | else | highlight ColorColumn guibg=#fcfcfc | endif
-  autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn ctermbg=16 | else | highlight ColorColumn ctermbg=230 | endif
-  autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer guifg=#000000 | else | highlight EndOfBuffer guifg=#ffffff | endif
-  autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer ctermfg=16 | else | highlight EndOfBuffer ctermfg=231 | endif
-  autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine guibg=#000000 | endif
-  autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine ctermbg=16 | endif
-  autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc | endif
+  if has('autocmd')
+    autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn guibg=#010101 | else | highlight ColorColumn guibg=#fcfcfc | endif
+    autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn ctermbg=16 | else | highlight ColorColumn ctermbg=230 | endif
+    autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer guifg=#000000 | else | highlight EndOfBuffer guifg=#ffffff | endif
+    autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer ctermfg=16 | else | highlight EndOfBuffer ctermfg=231 | endif
+    autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine guibg=#000000 | endif
+    autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine ctermbg=16 | endif
+    autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc | endif
+  endif
 augroup END
