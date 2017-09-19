@@ -195,12 +195,15 @@ colorscheme hemisu
 let &colorcolumn=join(range(80,999),",")
 augroup colorscheme_customizations
   if has('autocmd')
-    autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn guibg=#010101 | else | highlight ColorColumn guibg=#fcfcfc | endif
-    autocmd ColorScheme hemisu if &background == 'dark' | highlight ColorColumn ctermbg=16 | else | highlight ColorColumn ctermbg=230 | endif
-    autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer guifg=#000000 | else | highlight EndOfBuffer guifg=#ffffff | endif
-    autocmd ColorScheme hemisu if &background == 'dark' | highlight EndOfBuffer ctermfg=16 | else | highlight EndOfBuffer ctermfg=231 | endif
-    autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine guibg=#000000 | endif
-    autocmd ColorScheme hemisu if &background == 'dark' | highlight StatusLine ctermbg=16 | endif
-    autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight ColorColumn guibg=#010101  | else | highlight ColorColumn guibg=#fcfcfc   | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight ColorColumn ctermbg=16     | else | highlight ColorColumn ctermbg=230     | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight EndOfBuffer guifg=#000000  | else | highlight EndOfBuffer guifg=#ffffff   | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight EndOfBuffer ctermfg=16     | else | highlight EndOfBuffer ctermfg=231     | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLine guibg=#000000   | else | highlight StatusLine guibg=#ffffff    | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLine ctermbg=16      | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLineNC guibg=#000000 | else | highlight StatusLineNC guibg=#ffffff  | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLineNC ctermbg=16    | endif
+    autocmd ColorScheme hemisu if &background == 'dark'  | highlight VertSplit guibg=#000000    | else | highlight VertSplit guibg=#ffffff     | endif
+    autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc   | endif
   endif
 augroup END
