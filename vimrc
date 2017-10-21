@@ -207,3 +207,7 @@ augroup colorscheme_customizations
     autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc   | endif
   endif
 augroup END
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
