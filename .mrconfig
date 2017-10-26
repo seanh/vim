@@ -43,6 +43,9 @@ checkout = git clone 'https://github.com/gcmt/taboo.vim.git' 'taboo.vim'
 [pack/plugins/start/vim-lastplace]
 checkout = git clone 'https://github.com/farmergreg/vim-lastplace.git' 'vim-lastplace'
 
+[pack/plugins/start/fzf.vim]
+checkout = git clone 'https://github.com/junegunn/fzf.vim.git' 'fzf.vim'
+
 [pack/plugins/start/ack.vim]
 checkout = git clone 'https://github.com/mileszs/ack.vim.git' 'ack.vim'
 

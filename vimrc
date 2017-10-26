@@ -208,6 +208,8 @@ augroup colorscheme_customizations
   endif
 augroup END
 
+set rtp+=~/.fzf
+
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
