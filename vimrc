@@ -197,7 +197,8 @@ if has('gui_running')
 else
   set background=dark
 endif
-colorscheme hemisu
+colorscheme gruvbox
+:autocmd VimEnter * if exists(':AirlineTheme') | AirlineTheme gruvbox | endif
 let &colorcolumn=join(range(80,999),",")
 augroup colorscheme_customizations
   if has('autocmd')
