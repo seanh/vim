@@ -182,6 +182,12 @@ set statusline+=%=
 set statusline+=%y
 
 
+" Airline
+" =======
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+
 " Theme
 " =====
 if has('gui_running')
