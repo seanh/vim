@@ -205,6 +205,9 @@ augroup colorscheme_customizations
     autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLineNC ctermbg=16    | endif
     autocmd ColorScheme hemisu if &background == 'dark'  | highlight VertSplit guibg=#000000    | else | highlight VertSplit guibg=#ffffff     | endif
     autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc   | endif
+
+    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn ctermbg=235   | else | highlight ColorColumn ctermbg=229aa | endif
+    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn guibg=#ebdbb2 | else | highlight ColorColumn guibg=#fbf1c7 | endif
   endif
 augroup END
 
