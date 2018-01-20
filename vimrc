@@ -209,6 +209,10 @@ else
   set background=dark
   set termguicolors
 endif
+let g:gruvbox_contrast_light = 'medium'
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_improved_strings = 1
+let g:gruvbox_improved_warnings = 1
 colorscheme gruvbox
 :autocmd VimEnter * if exists(':AirlineTheme') | AirlineTheme gruvbox | endif
 let &colorcolumn=join(range(80,999),",")
@@ -226,7 +230,7 @@ augroup colorscheme_customizations
     autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc   | endif
 
     autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn ctermbg=235   | else | highlight ColorColumn ctermbg=229aa | endif
-    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn guibg=#ebdbb2 | else | highlight ColorColumn guibg=#fbf1c7 | endif
+    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn guibg=#1d2021 | else | highlight ColorColumn guibg=#fbf1c7 | endif
   endif
 augroup END
 
