@@ -185,7 +185,7 @@ set statusline+=%y
 " Airline
 " =======
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#show_buffers = 0
 let g:taboo_tabline = 0
 let g:airline#extensions#taboo#enabled = 1
 set noshowmode  " No node to show --INSERT-- anymore now that airline does it.
