@@ -46,3 +46,6 @@ cd ../../pack/plugins/start/YouCompleteMe/
 sudo apt-get -y install build-essential cmake python-dev python3-dev golang-go
 git submodule update --init --recursive
 ./install.py --tern-completer --gocode-completer
+
+cd ~/.vim
+./install_gvim_desktop_file.sh
