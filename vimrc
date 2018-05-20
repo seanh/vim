@@ -187,7 +187,7 @@ set statusline+=%y
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:taboo_tabline = 0
-let g:airline#extensions#taboo#enabled = 1
+let g:airline#extensions#taboo#enabled = 0
 set noshowmode  " No node to show --INSERT-- anymore now that airline does it.
 if has('gui_running')
   let g:airline_powerline_fonts = 0  " Powerline fonts not working in gvim.
