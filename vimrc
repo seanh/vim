@@ -3,7 +3,7 @@ set shortmess+=I   " Don't show startup message when you open vim with a
 set nowrap         " Don't soft wrap lines (scroll horizontally instead).
 set sidescroll=1   " Horizontally scroll one character at a time, instead of a
                    " whole screen width at a time.
-set cursorline     " Highlight the current line.
+set nocursorline   " Don't highlight the current line.
 set guioptions-=m  " Remove the menu bar from gVim.
 set guioptions-=T  " Remove the toolbar from gVim.
 set guioptions-=r  " Remove the scrollbar from gVim.
@@ -219,22 +219,10 @@ let g:gruvbox_improved_strings = 1
 let g:gruvbox_improved_warnings = 1
 colorscheme gruvbox
 :autocmd VimEnter * if exists(':AirlineTheme') | AirlineTheme gruvbox | endif
-let &colorcolumn=join(range(80,999),",")
+let &colorcolumn=join(range(100,999),",")
 augroup colorscheme_customizations
   if has('autocmd')
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight ColorColumn guibg=#010101  | else | highlight ColorColumn guibg=#fcfcfc   | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight ColorColumn ctermbg=16     | else | highlight ColorColumn ctermbg=230     | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight EndOfBuffer guifg=#000000  | else | highlight EndOfBuffer guifg=#ffffff   | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight EndOfBuffer ctermfg=16     | else | highlight EndOfBuffer ctermfg=231     | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLine guibg=#000000   | else | highlight StatusLine guibg=#ffffff    | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLine ctermbg=16      | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLineNC guibg=#000000 | else | highlight StatusLineNC guibg=#ffffff  | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight StatusLineNC ctermbg=16    | endif
-    autocmd ColorScheme hemisu if &background == 'dark'  | highlight VertSplit guibg=#000000    | else | highlight VertSplit guibg=#ffffff     | endif
-    autocmd ColorScheme hemisu if &background == 'light' | highlight CursorLine guibg=#ffffcc   | endif
-
-    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn ctermbg=235   | else | highlight ColorColumn ctermbg=229aa | endif
-    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn guibg=#1d2021 | else | highlight ColorColumn guibg=#fbf1c7 | endif
+    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn guibg=#191c1d | else | highlight ColorColumn guibg=#fbf1c7 | endif
   endif
 augroup END
 
