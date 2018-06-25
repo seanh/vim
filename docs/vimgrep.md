@@ -20,7 +20,7 @@ vimgrep
 
   (vimgrep doesn't seem to highlight all the matches like normal <kbd>/</kbd>
   search does, but you can get this by doing the search with <kbd>/</kbd>
-  first to make the highlights, then doing vimgrep `//g %` and using the
+  first to make the highlights, then doing <kbd>:vimgrep //g %</kbd> and using the
   quickfix list to navigate the results.)
 
 * Like many vim commands it populates the quickfix list with the search results.
