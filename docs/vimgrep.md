@@ -72,17 +72,13 @@ though.
 
 ### Using with the argument list
 
-You can populate vim's argument list first with <kbd>:args <FILES></kbd>,
+You can populate vim's argument list first with <kbd>:args {FILES}</kbd>,
 perhaps validate the contents of the argument list with <kbd>:args</kbd>,
 and then tell vimgrep to search all files in the argument list with `##`:
 
 <kbd>:vimgrep /foo/g ##</kbd>
 
 This also means that you can reuse the same argument list for multiple searches.
-
-Leaving the search query empty (`//`) searches using the current within-file
-search pattern. Test a search pattern within the current file first and then
-run it across all files:
 
 ### Using the current search pattern
 
