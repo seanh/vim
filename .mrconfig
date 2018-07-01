@@ -37,9 +37,6 @@ checkout = git clone 'https://github.com/tpope/vim-repeat.git' 'vim-repeat'
 [pack/plugins/start/vim-hemisu]
 checkout = git clone 'https://github.com/noahfrederick/vim-hemisu.git' 'vim-hemisu'
 
-[pack/plugins/start/taboo.vim]
-checkout = git clone 'https://github.com/gcmt/taboo.vim.git' 'taboo.vim'
-
 [pack/plugins/start/vim-lastplace]
 checkout = git clone 'https://github.com/farmergreg/vim-lastplace.git' 'vim-lastplace'
 
