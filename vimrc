@@ -203,21 +203,17 @@ else
   set background=dark
   set termguicolors
 endif
-let g:gruvbox_contrast_light = 'medium'
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_improved_strings = 1
-let g:gruvbox_improved_warnings = 1
+
+source ~/.vim/gruvbox.vim
 colorscheme gruvbox
-:autocmd VimEnter * if exists(':AirlineTheme') | AirlineTheme gruvbox | endif
-let &colorcolumn=join(range(100,999),",")
-augroup colorscheme_customizations
-  if has('autocmd')
-    autocmd ColorScheme gruvbox if &background == 'dark' | highlight ColorColumn guibg=#0d0e0f | else | highlight ColorColumn guibg=#fbf1c7 | endif
-  endif
-augroup END
+
+hi VertSplit guibg=bg guifg=bg
 
 set rtp+=~/.fzf
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+source ~/.vim/startify.vim
+source ~/.vim/autoclose.vim
