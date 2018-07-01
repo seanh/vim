@@ -172,17 +172,6 @@ let g:ycm_filetype_specific_completion_to_disable = {
 let g:taboo_tab_format=" %P (%W)%m "  " Use directory name as tab title.
 
 
-" Status Line
-" ===========
-set laststatus=2  " Always show the status line.
-set statusline=
-set statusline+=%f
-set statusline+=%m
-set statusline+=\ %{fugitive#head(7)}
-set statusline+=%=
-set statusline+=%y
-
-
 " Airline
 " =======
 " Don't mess around with patched fonts and symbols.
