@@ -41,9 +41,9 @@ sudo apt-get install -y ubuntu-minimal
 
 # FIXME: nodejs and npm need to be installed and configured.
 cd ../../pack/plugins/start/YouCompleteMe/
-sudo apt-get -y install build-essential cmake python-dev python3-dev golang-go
+sudo apt-get -y install build-essential cmake python-dev python3-dev
 git submodule update --init --recursive
-./install.py --tern-completer --gocode-completer
+./install.py
 
 cd ~/.vim
 ./install_gvim_desktop_file.sh
