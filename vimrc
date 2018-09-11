@@ -180,12 +180,12 @@ if has('gui_running')
   set guicursor+=a:blinkon0  " Disable all cursor blinking.
   set guifont=Ubuntu\ Mono\ 13
 else
-  set background=dark
+  set background=light
   set termguicolors
 endif
 
 source ~/.vim/gruvbox.vim
-colorscheme gruvbox
+colorscheme hemisu
 
 hi VertSplit guibg=bg guifg=bg
 
