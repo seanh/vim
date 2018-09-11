@@ -40,9 +40,6 @@ checkout = git clone 'https://github.com/noahfrederick/vim-hemisu.git' 'vim-hemi
 [pack/plugins/start/vim-lastplace]
 checkout = git clone 'https://github.com/farmergreg/vim-lastplace.git' 'vim-lastplace'
 
-[pack/plugins/start/fzf.vim]
-checkout = git clone 'https://github.com/junegunn/fzf.vim.git' 'fzf.vim'
-
 [pack/plugins/start/ack.vim]
 checkout = git clone 'https://github.com/mileszs/ack.vim.git' 'ack.vim'
 
@@ -54,12 +51,3 @@ checkout = git clone 'https://github.com/sheerun/vim-polyglot.git' 'vim-polyglot
 
 [pack/plugins/start/vim-commentary]
 checkout = git clone 'https://github.com/tpope/vim-commentary.git' 'vim-commentary'
-
-[pack/plugins/start/vim-airline]
-checkout = git clone 'https://github.com/vim-airline/vim-airline.git' 'vim-airline'
-
-[pack/plugins/start/vim-airline-themes]
-checkout = git clone 'https://github.com/vim-airline/vim-airline-themes.git' 'vim-airline-themes'
-
-[pack/plugins/start/vim-startify]
-checkout = git clone 'https://github.com/mhinz/vim-startify.git' 'vim-startify'
