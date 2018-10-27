@@ -4,7 +4,7 @@
 # Installs vim so that the YouCompleteMe plugin will work.
 set -e
 
-cd ~/.vim
+cd ~/Projects/vim
 
 sudo apt-get -y install libncurses5-dev libgnome2-dev libgnomeui-dev \
                         libgtk-3-dev libatk1.0-dev libbonoboui2-dev \
@@ -45,5 +45,5 @@ sudo apt-get -y install build-essential cmake python-dev python3-dev
 git submodule update --init --recursive
 ./install.py
 
-cd ~/.vim
+cd ~/Projects/vim
 ./install_gvim_desktop_file.sh
