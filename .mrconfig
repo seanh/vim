@@ -57,3 +57,6 @@ checkout = git clone 'https://github.com/ambv/black.git' 'black'
 
 [pack/plugins/start/vim-tmux-focus-events]
 checkout = git clone 'git@github.com:tmux-plugins/vim-tmux-focus-events.git' 'vim-tmux-focus-events'
+
+[pack/plugins/start/papercolor-theme]
+checkout = git clone 'git@github.com:NLKNguyen/papercolor-theme.git' 'papercolor-theme'
