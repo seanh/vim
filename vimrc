@@ -12,7 +12,7 @@ set guioptions-=L  " Don't show the scrollbar in gVim when there is a
 set hidden
 set nobackup       " Don't leave annoying backup files around.
 set noswapfile     " Don't leave annoying swap files around.
-set number         " Show line numbers.
+set nonumber         " Show line numbers.
 set showcmd        " Show the normal-mode command chord entered so far in the
                    " bottom-right corner.
 set history=10000  " The number of previous commands that are remembered.
@@ -151,21 +151,9 @@ let g:indentLine_enabled=0  " Do :IndentLinesEnable to show indent lines.
 " ====
 let g:taboo_tab_format=" %P (%W)%m "  " Use directory name as tab title.
 
-
-" Airline
-" =======
-" Don't mess around with patched fonts and symbols.
-let g:airline_powerline_fonts = 0
-let g:airline_symbols_ascii = 1
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_buffers = 0
-let g:taboo_tabline = 0
-let g:airline#extensions#taboo#enabled = 0
-
-if has('gui_running')
-  let g:airline#extensions#tabline#enabled = 0  " Use GTK tabs in GVim.
-endif
+"source ~/.vim/airline.vim
+source ~/.vim/gruvbox.vim
+source ~/.vim/hemisu.vim
 
 " Theme
 " =====
@@ -174,16 +162,22 @@ if &term =~# '^screen'
   set t_8b=[48;2;%lu;%lu;%lum
 endif
 if has('gui_running')
-  set background=light
+  set background=dark
   set guicursor+=a:blinkon0  " Disable all cursor blinking.
-  set guifont=Ubuntu\ Mono\ 13
+  set guifont=Inconsolata\ 13
+  set showtabline=2
+  autocmd VimEnter * silent edit ~/Notes/SCRATCH.md
+  autocmd VimEnter * tabnew
+  autocmd VimEnter * silent edit ~/Notes/TODO.md
+  autocmd VimEnter * tabnew
+  set background=light
+  colorscheme PaperColor
 else
   set background=dark
   set termguicolors
+  colorscheme PaperColor
 endif
 
-source ~/.vim/gruvbox.vim
-colorscheme gruvbox
 
 hi VertSplit guibg=bg guifg=bg
 
