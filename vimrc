@@ -189,3 +189,17 @@ endif
 
 source ~/.vim/startify.vim
 source ~/.vim/youcompleteme.vim
+
+if $VIM_THEME == 'white'
+  set columns=83
+  set lines=59
+  set showtabline=1
+  set guifont=Input\ Mono\ Light\ 11
+  let &colorcolumn=join(range(81,999),",")
+  autocmd VimEnter * set noru
+  autocmd VimEnter * set laststatus=0
+  set background=light
+  colorscheme hemisu
+else
+  " Vimscript to execute otherwise.
+endif
