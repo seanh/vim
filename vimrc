@@ -58,9 +58,7 @@ nnoremap <leader>? :e ~/Dropbox/vim.txt<Enter>
 set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*,.coverage.*
 set shell=/bin/sh  " Fish causes problems with CtrlP.
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_switch_buffer = 'et'
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35,results:35'
 let g:ctrlp_switch_buffer = '0'
