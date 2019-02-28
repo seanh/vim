@@ -60,3 +60,12 @@ checkout = git clone 'git@github.com:tmux-plugins/vim-tmux-focus-events.git' 'vi
 
 [pack/plugins/start/papercolor-theme]
 checkout = git clone 'git@github.com:NLKNguyen/papercolor-theme.git' 'papercolor-theme'
+
+[pack/plugins/start/vim-colors-solarized]
+checkout = git clone 'git@github.com:altercation/vim-colors-solarized.git' 'vim-colors-solarized'
+
+[pack/plugins/start/vim-airline-themes]
+checkout = git clone 'git@github.com:vim-airline/vim-airline-themes.git' 'vim-airline-themes'
+
+[pack/plugins/start/vim-airline]
+checkout = git clone 'git@github.com:vim-airline/vim-airline.git' 'vim-airline'
