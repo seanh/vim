@@ -162,7 +162,7 @@ endif
 if has('gui_running')
   set background=dark
   set guicursor+=a:blinkon0  " Disable all cursor blinking.
-  set guifont=Inconsolata\ 13
+  set guifont=Input\ Mono\ Regular\ 11
   set showtabline=2
   "autocmd VimEnter * silent edit ~/Notes/SCRATCH.md
   "autocmd VimEnter * tabnew
