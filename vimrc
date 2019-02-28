@@ -168,8 +168,8 @@ if has('gui_running')
   "autocmd VimEnter * tabnew
   "autocmd VimEnter * silent edit ~/Notes/TODO.md
   "autocmd VimEnter * tabnew
-  set background=light
-  colorscheme PaperColor
+  set background=dark
+  colorscheme gruvbox
 else
   set background=dark
   set termguicolors
