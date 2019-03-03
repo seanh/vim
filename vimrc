@@ -198,6 +198,17 @@ if $VIM_THEME == 'white'
   autocmd VimEnter * set laststatus=0
   set background=light
   colorscheme hemisu
+
+  " Prose mode.
+  set wrap linebreak nolist
+  nmap j gj
+  nmap <Down> gj
+  nmap k gk
+  nmap <Up> gk
+  vmap j gj
+  vmap <Down> gj
+  vmap k gk
+  vmap <Up> gk
 else
   " Vimscript to execute otherwise.
 endif
