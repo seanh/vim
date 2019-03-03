@@ -163,7 +163,6 @@ if has('gui_running')
   set background=dark
   set guicursor+=a:blinkon0  " Disable all cursor blinking.
   set guifont=Input\ Mono\ Regular\ 11
-  set showtabline=2
   "autocmd VimEnter * silent edit ~/Notes/SCRATCH.md
   "autocmd VimEnter * tabnew
   "autocmd VimEnter * silent edit ~/Notes/TODO.md
@@ -191,7 +190,6 @@ source ~/.vim/youcompleteme.vim
 if $VIM_THEME == 'white'
   set columns=83
   set lines=59
-  set showtabline=1
   set guifont=Input\ Mono\ Light\ 11
   let &colorcolumn=join(range(81,999),",")
   autocmd VimEnter * set noru
