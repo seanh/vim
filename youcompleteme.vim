@@ -10,9 +10,8 @@ let g:ycm_filetype_blacklist = {
       \ 'infolog' : 1,
       \}
 " By default *semantic* completion in "gitcommit" files is disabled in this
-" blacklist. Remove it. Also disable Python/Jedi semantic completion.
+" blacklist. Remove it.
 let g:ycm_filetype_specific_completion_to_disable = {
-      \ 'python': 1
       \}
 let g:ycm_complete_in_comments = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
