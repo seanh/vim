@@ -4,11 +4,6 @@ set nowrap         " Don't soft wrap lines (scroll horizontally instead).
 set sidescroll=1   " Horizontally scroll one character at a time, instead of a
                    " whole screen width at a time.
 set nocursorline   " Don't highlight the current line.
-set guioptions-=m  " Remove the menu bar from gVim.
-set guioptions-=T  " Remove the toolbar from gVim.
-set guioptions-=r  " Remove the scrollbar from gVim.
-set guioptions-=L  " Don't show the scrollbar in gVim when there is a
-                   " vertically split window, either.
 set hidden
 set nobackup       " Don't leave annoying backup files around.
 set noswapfile     " Don't leave annoying swap files around.
@@ -159,26 +154,9 @@ if &term =~# '^screen'
   set t_8f=[38;2;%lu;%lu;%lum
   set t_8b=[48;2;%lu;%lu;%lum
 endif
-if has('gui_running')
-  set background=dark
-  set columns=90
-  set lines=56
-  set guicursor+=a:blinkon0  " Disable all cursor blinking.
-  set guifont=Input\ Mono\ Regular\ 11
-  "autocmd VimEnter * silent edit ~/Notes/SCRATCH.md
-  "autocmd VimEnter * tabnew
-  "autocmd VimEnter * silent edit ~/Notes/TODO.md
-  "autocmd VimEnter * tabnew
-  set background=dark
-  colorscheme gruvbox
-else
-  set background=dark
-  set termguicolors
-  colorscheme PaperColor
-endif
-
-
-hi VertSplit guibg=bg guifg=bg
+set background=dark
+set termguicolors
+colorscheme PaperColor
 
 set rtp+=~/.fzf
 
@@ -188,27 +166,3 @@ endif
 
 source ~/.vim/startify.vim
 source ~/.vim/youcompleteme.vim
-
-if $VIM_THEME == 'white'
-  set columns=83
-  set lines=59
-  set guifont=Input\ Mono\ Light\ 11
-  let &colorcolumn=join(range(81,999),",")
-  autocmd VimEnter * set noru
-  autocmd VimEnter * set laststatus=0
-  set background=light
-  colorscheme hemisu
-
-  " Prose mode.
-  set wrap linebreak nolist
-  nmap j gj
-  nmap <Down> gj
-  nmap k gk
-  nmap <Up> gk
-  vmap j gj
-  vmap <Down> gj
-  vmap k gk
-  vmap <Up> gk
-else
-  " Vimscript to execute otherwise.
-endif
