@@ -10,7 +10,8 @@ sudo apt-get -y install libncurses5-dev libgnome2-dev libgnomeui-dev \
                         libgtk-3-dev libatk1.0-dev libbonoboui2-dev \
                         libcairo2-dev libx11-dev libxpm-dev libxt-dev \
                         python-dev python3-dev ruby-dev lua5.1 lua5.1-dev \
-                        libperl-dev git myrepos python3-venv
+                        libperl-dev git myrepos python3-venv \
+                        exuberant-ctags
 sudo apt-get -y remove vim vim-runtime gvim vim-tiny vim-common \
                        vim-gui-common vim-nox
 
