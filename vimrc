@@ -161,6 +161,8 @@ if &term =~# '^screen'
 endif
 if has('gui_running')
   set background=dark
+  set columns=90
+  set lines=56
   set guicursor+=a:blinkon0  " Disable all cursor blinking.
   set guifont=Input\ Mono\ Regular\ 11
   "autocmd VimEnter * silent edit ~/Notes/SCRATCH.md
