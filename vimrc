@@ -166,3 +166,4 @@ endif
 
 source ~/.vim/startify.vim
 source ~/.vim/youcompleteme.vim
+let g:black_virtualenv = '/usr/local/bin/'
