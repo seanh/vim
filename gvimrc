@@ -7,8 +7,8 @@ set columns=90
 set lines=56
 set guicursor+=a:blinkon0  " Disable all cursor blinking.
 set guifont=Input\ Mono\ Regular\ 11
-set background=dark
-colorscheme gruvbox
+set background=light
+colorscheme one
 
 if $VIM_THEME == 'white'
   set columns=83
