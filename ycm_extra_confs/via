@@ -1,0 +1,4 @@
+def Settings( **kwargs ):
+  return {
+    'interpreter_path': '~/Projects/via/.tox/py27-tests/bin/python'
+  }

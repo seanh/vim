@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+set -e
+ln -fs ~/.vim/ycm_extra_confs/bouncer ~/Projects/bouncer/.ycm_extra_conf.py
+ln -fs ~/.vim/ycm_extra_confs/h ~/Projects/h/.ycm_extra_conf.py
+ln -fs ~/.vim/ycm_extra_confs/lms ~/Projects/lms/.ycm_extra_conf.py
+ln -fs ~/.vim/ycm_extra_confs/via ~/Projects/via/.ycm_extra_conf.py

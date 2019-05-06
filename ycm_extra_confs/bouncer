@@ -1,0 +1,4 @@
+def Settings( **kwargs ):
+  return {
+    'interpreter_path': '~/Projects/bouncer/.tox/py36-tests/bin/python'
+  }
