@@ -21,4 +21,4 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-silent !ycm_extra_confs/make-symlinks
+silent !~/.vim/ycm_extra_confs/make-symlinks
