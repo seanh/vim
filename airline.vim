@@ -8,6 +8,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:taboo_tabline = 0
 let g:airline#extensions#taboo#enabled = 0
+let g:airline#extensions#gutentags#enabled = 1
 
 if has('gui_running')
   let g:airline#extensions#tabline#enabled = 0  " Use GTK tabs in GVim.
