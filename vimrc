@@ -164,6 +164,8 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+set sessionoptions+=resize
+
 source ~/.vim/startify.vim
 source ~/.vim/youcompleteme.vim
 source ~/.vim/gutentags.vim

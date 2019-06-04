@@ -31,3 +31,5 @@ if $VIM_THEME == 'white'
   vmap k gk
   vmap <Up> gk
 endif
+
+silent source ~/Session.vim
