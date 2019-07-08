@@ -17,7 +17,7 @@ set shiftround     " Round indentation to multiples of shiftwidth when > and <
                    " are used to indent and dedent. For example if shiftwidth
                    " is 2, and a line is indented by 1, then > will indent the
                    " line to 2 not 3 (and then > again will indent it to 4).
-set title          " Change the terminal's title.
+set notitle        " Don't change the terminal's title.
 set list           " Show trailing whitespace etc (see also :help listchars)
 set splitbelow     " Open split windows below the current window, not above.
 set splitright     " Open split windows to the right of the current window, not to the left.
