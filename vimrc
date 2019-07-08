@@ -60,24 +60,6 @@ let g:ctrlp_switch_buffer = '0'
 let g:ctrlp_match_current_file = 1
 
 
-" Clipboard and registers
-" =======================
-"
-" Make Vim use the desktop clipboard for all yank, change, delete and put
-" operations. Yank in Vim will yank into the desktop clipboard, put (paste) in
-" Vim will paste from the desktop clipboard.
-"
-" Warning: Things like deleting a single character with x will replace the
-" contents of your desktop clipboard with that single character.
-"
-" Tip: The Yank register ("0) always contains the last yanked text and is not
-" overwritten by change or delete commands. For example "0p to paste the last
-" yanked text.
-if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
-endif
-
-
 " Undo
 " ====
 set undofile             " Turn on undo persistence.
