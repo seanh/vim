@@ -136,9 +136,9 @@ if &term =~# '^screen'
   set t_8f=[38;2;%lu;%lu;%lum
   set t_8b=[48;2;%lu;%lu;%lum
 endif
-set background=light
+set background=dark
 set termguicolors
-colorscheme one
+colorscheme PaperColor
 
 set rtp+=~/.fzf
 
