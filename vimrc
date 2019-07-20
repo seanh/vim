@@ -22,6 +22,7 @@ set list           " Show trailing whitespace etc (see also :help listchars)
 set splitbelow     " Open split windows below the current window, not above.
 set splitright     " Open split windows to the right of the current window, not to the left.
 set ttymouse=xterm2
+set sessionoptions+=globals
 
 
 " Non-leader key mappings
