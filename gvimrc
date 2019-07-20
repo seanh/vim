@@ -7,7 +7,7 @@ set sessionoptions+=resize
 set columns=90
 set lines=56
 set guicursor+=a:blinkon0  " Disable all cursor blinking.
-set guifont=Input\ Mono\ Regular\ 11
+set guifont=Liberation\ Mono\ Regular\ 11
 set background=light
 colorscheme one
 
