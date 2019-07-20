@@ -75,3 +75,6 @@ checkout = git clone 'git@github.com:rakr/vim-one.git' 'vim-one'
 
 [pack/plugins/start/vim-obsession]
 checkout = git clone 'git@github.com:tpope/vim-obsession.git' 'vim-obsession'
+
+[pack/plugins/start/taboo.vim]
+checkout = git clone 'git@github.com:gcmt/taboo.vim.git' 'taboo.vim'
