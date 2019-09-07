@@ -149,7 +149,7 @@ if has('autocmd')
 endif
 set background=dark
 set termguicolors
-colorscheme PaperColor
+colorscheme gruvbox
 
 set rtp+=~/.fzf
 
