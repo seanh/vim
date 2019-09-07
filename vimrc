@@ -129,7 +129,7 @@ let g:indentLine_enabled=0  " Do :IndentLinesEnable to show indent lines.
 " ====
 let g:taboo_tab_format=" %P (%W)%m "  " Use directory name as tab title.
 
-source ~/.vim/airline.vim
+"source ~/.vim/airline.vim
 source ~/.vim/gruvbox.vim
 source ~/.vim/hemisu.vim
 source ~/.vim/one.vim
