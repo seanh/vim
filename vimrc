@@ -161,3 +161,6 @@ source ~/.vim/startify.vim
 source ~/.vim/youcompleteme.vim
 source ~/.vim/gutentags.vim
 source ~/.vim/black.vim
+
+" Exit insert mode by typing "jj" twice quickly.
+:imap jj <Esc>
