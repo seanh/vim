@@ -12,6 +12,7 @@ set showcmd        " Show the normal-mode command chord entered so far in the
                    " bottom-right corner.
 set history=10000  " The number of previous commands that are remembered.
 set mouse=a        " Enable the mouse in terminal vim.
+set mousefocus     " Enable focus-follows-mouse for windows.
 set showmatch      " Highlight matching brackets.
 set shiftround     " Round indentation to multiples of shiftwidth when > and <
                    " are used to indent and dedent. For example if shiftwidth
