@@ -42,7 +42,7 @@ sudo apt-get install -y ubuntu-minimal
 
 # FIXME: nodejs and npm need to be installed and configured.
 cd ../../pack/plugins/start/YouCompleteMe/
-sudo apt-get -y install build-essential cmake python-dev python3-dev
+sudo apt-get -y install build-essential cmake python3-dev
 git submodule update --init --recursive
 ./install.py
 
