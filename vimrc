@@ -141,15 +141,9 @@ if &term =~# '^screen'
   set t_8f=[38;2;%lu;%lu;%lum
   set t_8b=[48;2;%lu;%lu;%lum
 endif
-" Make terminal windows use white on black, even if the rest of vim is the
-" other way round.
-if has('autocmd')
-  autocmd ColorScheme * highlight Terminal guibg=black
-  autocmd ColorScheme * highlight Terminal guifg=white
-endif
-set background=dark
 set termguicolors
-colorscheme gruvbox
+set background=dark
+colorscheme PaperColor
 
 set rtp+=~/.fzf
 
