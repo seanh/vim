@@ -13,3 +13,9 @@ let g:airline#extensions#gutentags#enabled = 1
 if has('gui_running')
   let g:airline#extensions#tabline#enabled = 0  " Use GTK tabs in GVim.
 endif
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+let g:airline_symbols.branch = ''
