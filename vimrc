@@ -42,11 +42,7 @@ nnoremap <leader>n :CtrlP ~/notes<Enter>
 nnoremap <leader>N :e ~/notes<Enter>
 nnoremap <leader>t :CtrlPTag<Enter>
 nnoremap <leader><Enter> :CtrlPBuffer<Enter>
-nnoremap <leader>1 :set lines=52 \| set columns=88<Enter>
-nnoremap <leader>2 :set lines=52 \| set columns=177<Enter>
-nnoremap <leader>3 :set lines=52 \| set columns=266<Enter>
 nnoremap <leader>? :e ~/Dropbox/vim.txt<Enter>
-
 
 
 " CtrlP
