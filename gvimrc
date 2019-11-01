@@ -1,3 +1,4 @@
+set background=light
 set guioptions-=m  " Remove the menu bar from gVim.
 set guioptions-=T  " Remove the toolbar from gVim.
 set guioptions-=r  " Remove the scrollbar from gVim.
