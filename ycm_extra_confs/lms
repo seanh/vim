@@ -1,4 +1,0 @@
-def Settings( **kwargs ):
-  return {
-    'interpreter_path': '~/Projects/lms/.tox/py36-tests/bin/python'
-  }

@@ -21,4 +21,5 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
-silent !~/.vim/ycm_extra_confs/make-symlinks
+" Read ~/.global_ycm_extra_conf.py if no local .ycm_extra_conf.py exists.
+let g:ycm_global_ycm_extra_conf = '~/.vim/global_ycm_extra_conf.py'
