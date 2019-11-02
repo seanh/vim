@@ -78,3 +78,6 @@ checkout = git clone 'git@github.com:tpope/vim-obsession.git' 'vim-obsession'
 
 [pack/plugins/start/taboo.vim]
 checkout = git clone 'git@github.com:gcmt/taboo.vim.git' 'taboo.vim'
+
+[pack/plugins/start/ayu-vim]
+checkout = git clone 'git@github.com:ayu-theme/ayu-vim.git' 'ayu-vim'
