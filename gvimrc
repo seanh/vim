@@ -5,14 +5,14 @@ set guioptions-=r  " Remove the scrollbar from gVim.
 set guioptions-=L  " Don't show the scrollbar in gVim when there is a
                    " vertically split window, either.
 set sessionoptions+=resize
-set columns=89 " Just wide enough to fit Black's 88 chars per line.
+set columns=88 " Just wide enough to fit Black's 88 chars per line.
 set lines=24
 set guicursor+=a:blinkon0  " Disable all cursor blinking.
 colorscheme one
 
 " Set to width suitable for editing one file.
-nnoremap <leader>1 :set columns=89<Enter>
+nnoremap <leader>1 :set columns=88<Enter>
 " Set to width suitable for editing two files side-by-side.
-nnoremap <leader>2 :set columns=179<Enter>
+nnoremap <leader>2 :set columns=177<Enter>
 " Set to width suitable for editing three files side-by-side.
-nnoremap <leader>3 :set columns=269<Enter>
+nnoremap <leader>3 :set columns=266<Enter>
