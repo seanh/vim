@@ -24,6 +24,7 @@ set splitbelow     " Open split windows below the current window, not above.
 set splitright     " Open split windows to the right of the current window, not to the left.
 set ttymouse=xterm2
 set sessionoptions+=globals
+set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*,.coverage.*,.tox/*,.git/*,**/coverage/*
 
 
 " Non-leader key mappings
