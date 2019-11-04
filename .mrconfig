@@ -1,6 +1,9 @@
 [pack/plugins/start/vim-auto-save]
 checkout = git clone 'https://github.com/907th/vim-auto-save.git' 'vim-auto-save'
 
+[pack/plugins/start/ctrlp.vim]
+checkout = git clone 'https://github.com/ctrlpvim/ctrlp.vim.git' 'ctrlp.vim'
+
 [pack/plugins/start/vim-sensible]
 checkout = git clone 'https://github.com/tpope/vim-sensible.git' 'vim-sensible'
 
@@ -66,9 +69,3 @@ checkout = git clone 'git@github.com:gcmt/taboo.vim.git' 'taboo.vim'
 
 [pack/plugins/start/ayu-vim]
 checkout = git clone 'git@github.com:ayu-theme/ayu-vim.git' 'ayu-vim'
-
-[pack/plugins/start/fzf]
-checkout = git clone 'git@github.com:junegunn/fzf.git' 'fzf'
-
-[pack/plugins/start/fzf.vim]
-checkout = git clone 'https://github.com/junegunn/fzf.vim' 'fzf.vim'
