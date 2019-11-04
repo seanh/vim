@@ -38,8 +38,8 @@ vnoremap Q gq
 " Leader key
 " ==========
 let mapleader="\<CR>"
-nnoremap <leader>n :CtrlP ~/notes<Enter>
-nnoremap <leader>N :e ~/notes<Enter>
+nnoremap <leader>n :CtrlP ~/Notes<Enter>
+nnoremap <leader>N :e ~/Notes<Enter>
 nnoremap <leader>t :CtrlPTag<Enter>
 nnoremap <leader><Enter> :CtrlPBuffer<Enter>
 nnoremap <leader>? :e ~/Dropbox/vim.txt<Enter>
