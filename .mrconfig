@@ -46,9 +46,6 @@ checkout = git clone 'https://github.com/mileszs/ack.vim.git' 'ack.vim'
 [pack/plugins/start/vim-unimpaired]
 checkout = git clone 'https://github.com/tpope/vim-unimpaired.git' 'vim-unimpaired'
 
-[pack/plugins/start/vim-polyglot]
-checkout = git clone 'https://github.com/sheerun/vim-polyglot.git' 'vim-polyglot'
-
 [pack/plugins/start/vim-commentary]
 checkout = git clone 'https://github.com/tpope/vim-commentary.git' 'vim-commentary'
 
