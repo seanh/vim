@@ -49,8 +49,6 @@ nnoremap <leader>? :e ~/Dropbox/vim.txt<Enter>
 " =====
 " Files that the wildmenu (e.g. tab-complete when typing an :e <path> command)
 " should ignore. CtrlP also uses this.
-set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*,.coverage.*
-set shell=/bin/sh  " Fish causes problems with CtrlP.
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_switch_buffer = 'et'
@@ -58,6 +56,8 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35,results:35'
 let g:ctrlp_switch_buffer = '0'
 let g:ctrlp_match_current_file = 1
 let g:ctrlp_user_command = 'rg --files'
+let g:ctrlp_working_path_mode = 'wra'
+let g:ctrlp_use_caching = 0
 
 
 " Undo
