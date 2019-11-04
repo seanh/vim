@@ -33,30 +33,16 @@ nnoremap <Space> :
 " Reflow a paragraph or a selected block with Q:
 nnoremap Q gqap
 vnoremap Q gq
+nnoremap <c-t> :Files<Enter>
 
 
 " Leader key
 " ==========
 let mapleader="\<CR>"
-nnoremap <leader>n :CtrlP ~/notes<Enter>
+nnoremap <leader>n :FZF ~/Notes<Enter>
 nnoremap <leader>N :e ~/notes<Enter>
-nnoremap <leader>t :CtrlPTag<Enter>
-nnoremap <leader><Enter> :CtrlPBuffer<Enter>
+nnoremap <leader><Enter> :Buffers<Enter>
 nnoremap <leader>? :e ~/Dropbox/vim.txt<Enter>
-
-
-" CtrlP
-" =====
-" Files that the wildmenu (e.g. tab-complete when typing an :e <path> command)
-" should ignore. CtrlP also uses this.
-set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*,.coverage.*
-set shell=/bin/sh  " Fish causes problems with CtrlP.
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_switch_buffer = 'et'
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35,results:35'
-let g:ctrlp_switch_buffer = '0'
-let g:ctrlp_match_current_file = 1
 
 
 " Undo

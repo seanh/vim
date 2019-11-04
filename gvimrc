@@ -16,3 +16,8 @@ nnoremap <leader>1 :set columns=88<Enter>
 nnoremap <leader>2 :set columns=177<Enter>
 " Set to width suitable for editing three files side-by-side.
 nnoremap <leader>3 :set columns=266<Enter>
+
+let $FZF_DEFAULT_COMMAND = 'rg --files'
+let $FZF_DEFAULT_OPTS = '--color=light --multi --preview "[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || highlight -O ansi -l {} || coderay {} || rougify {} || cat {}) 2> /dev/null | head -500"'
+:highlight Terminal guibg=#0F1419
+:highlight Terminal guifg=#D3D7CF
