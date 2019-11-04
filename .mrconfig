@@ -66,3 +66,6 @@ checkout = git clone 'git@github.com:gcmt/taboo.vim.git' 'taboo.vim'
 
 [pack/plugins/start/ayu-vim]
 checkout = git clone 'git@github.com:ayu-theme/ayu-vim.git' 'ayu-vim'
+
+[pack/plugins/start/vim-gutentags]
+checkout = git clone 'git@github.com:ludovicchabant/vim-gutentags.git' 'vim-gutentags'
