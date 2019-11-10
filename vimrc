@@ -56,9 +56,11 @@ let g:ctrlp_switch_buffer = 'et'
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:35,results:35'
 let g:ctrlp_switch_buffer = '0'
 let g:ctrlp_match_current_file = 1
-let g:ctrlp_user_command = 'rg --files'
 let g:ctrlp_working_path_mode = 'wra'
-let g:ctrlp_use_caching = 0
+if executable("rg")
+  let g:ctrlp_user_command = 'rg --files --sort=none'
+  let g:ctrlp_use_caching = 0
+endif
 
 
 " Undo
