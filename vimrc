@@ -154,3 +154,8 @@ source ~/.vim/black.vim
 
 " Exit insert mode by typing "jj" twice quickly.
 :imap jj <Esc>
+
+if executable("rg")
+    set grepprg=rg\ --vimgrep\ --no-heading
+    set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
