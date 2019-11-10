@@ -147,10 +147,6 @@ colorscheme ayu
 
 set rtp+=~/.fzf
 
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
 source ~/.vim/startify.vim
 source ~/.vim/youcompleteme.vim
 source ~/.vim/gutentags.vim
