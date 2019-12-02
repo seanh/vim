@@ -1,2 +1,1 @@
-nnoremap <leader>b :Black<Enter>
-
+nnoremap <F9> :Black<CR>
