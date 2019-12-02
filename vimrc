@@ -143,7 +143,7 @@ if &term =~# '^screen'
 endif
 set termguicolors
 set background=dark
-colorscheme ayu
+colorscheme gruvbox
 
 set rtp+=~/.fzf
 
