@@ -135,9 +135,6 @@ source ~/.vim/gruvbox.vim
 source ~/.vim/hemisu.vim
 source ~/.vim/one.vim
 source ~/.vim/papercolor.vim
-
-set rtp+=~/.fzf
-
 source ~/.vim/startify.vim
 source ~/.vim/youcompleteme.vim
 source ~/.vim/gutentags.vim
