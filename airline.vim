@@ -7,5 +7,5 @@ else
 endif
 " Change how the Obsession.vim status and line and column numbers in the
 " bottom right look.
-let g:airline_section_z = '%{airline#util#wrap(airline#extensions#obsession#get_status(),0)}%4l/%L %3v'
+let g:airline_section_z = '%{airline#util#wrap(airline#extensions#obsession#get_status(),0)}%3l/%L:%-3v'
 let g:airline#extensions#gutentags#enabled = 1
