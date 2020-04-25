@@ -5,6 +5,14 @@ if has('gui_running')
 else
   let g:airline_theme='minimalist'
 endif
+
+" Don't show the file type.
+" This is the default g:airline_section_x but with just the filetype
+" (`%{airline#util#wrap(airline#parts#filetype(),0)}`) removed.
+let g:airline_section_x = '%{airline#util#prepend("",0)}%{airline#util#prepend(airline#extensions#gutentags#status(),0)}%{airline#util#prepend("",0)}'
+
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+
 " Change how the Obsession.vim status and line and column numbers in the
 " bottom right look.
 let g:airline_section_z = '%{airline#util#wrap(airline#extensions#obsession#get_status(),0)}%3l/%L:%-3v'
