@@ -17,4 +17,8 @@ let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 " bottom right look. This contains all the same components as the default
 " section z but just formatted differently.
 let g:airline_section_z = '%{airline#util#wrap(airline#extensions#obsession#get_status(),0)}%3l/%L:%-3v'
+
+" Don't show the git branch.
+let g:airline#extensions#branch#enabled = 0
+
 let g:airline#extensions#gutentags#enabled = 1
