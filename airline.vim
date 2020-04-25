@@ -21,4 +21,5 @@ let g:airline_section_z = '%{airline#util#wrap(airline#extensions#obsession#get_
 " Don't show the git branch.
 let g:airline#extensions#branch#enabled = 0
 
+" Do enable the Gutentags integration.
 let g:airline#extensions#gutentags#enabled = 1
