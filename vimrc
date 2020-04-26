@@ -25,7 +25,6 @@ set splitright     " Open split windows to the right of the current window, not 
 set ttymouse=xterm2
 set sessionoptions+=globals
 set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*,.coverage.*,.tox/*,.git/*,**/coverage/*
-set background=dark
 
 
 " Non-leader key mappings
