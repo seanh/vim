@@ -1,29 +1,17 @@
 [pack/plugins/start/vim-auto-save]
 checkout = git clone 'https://github.com/907th/vim-auto-save.git' 'vim-auto-save'
 
-[pack/plugins/start/ctrlp.vim]
-checkout = git clone 'https://github.com/ctrlpvim/ctrlp.vim.git' 'ctrlp.vim'
-
 [pack/plugins/start/vim-sensible]
 checkout = git clone 'https://github.com/tpope/vim-sensible.git' 'vim-sensible'
 
 [pack/plugins/start/vim-vinegar]
 checkout = git clone 'https://github.com/tpope/vim-vinegar.git' 'vim-vinegar'
 
-[pack/plugins/start/vim-fugitive]
-checkout = git clone 'https://github.com/tpope/vim-fugitive.git' 'vim-fugitive'
-
 [pack/plugins/start/vim-bbye]
 checkout = git clone 'https://github.com/moll/vim-bbye.git' 'vim-bbye'
 
 [pack/plugins/start/vim-eunuch]
 checkout = git clone 'https://github.com/tpope/vim-eunuch.git' 'vim-eunuch'
-
-[pack/plugins/start/indentLine]
-checkout = git clone 'https://github.com/Yggdroot/indentLine.git' 'indentLine'
-
-[pack/plugins/start/YouCompleteMe]
-checkout = git clone 'https://github.com/ycm-core/YouCompleteMe' 'YouCompleteMe'
 
 [pack/plugins/start/vim-surround]
 checkout = git clone 'https://github.com/tpope/vim-surround.git' 'vim-surround'
@@ -34,9 +22,6 @@ checkout = git clone 'https://github.com/tpope/vim-repeat.git' 'vim-repeat'
 [pack/plugins/start/vim-hemisu]
 checkout = git clone 'https://github.com/noahfrederick/vim-hemisu.git' 'vim-hemisu'
 
-[pack/plugins/start/vim-lastplace]
-checkout = git clone 'https://github.com/farmergreg/vim-lastplace.git' 'vim-lastplace'
-
 [pack/plugins/start/vim-unimpaired]
 checkout = git clone 'https://github.com/tpope/vim-unimpaired.git' 'vim-unimpaired'
 
@@ -46,26 +31,11 @@ checkout = git clone 'https://github.com/tpope/vim-commentary.git' 'vim-commenta
 [pack/plugins/start/black]
 checkout = git clone 'https://github.com/ambv/black.git' 'black'
 
-[pack/plugins/start/vim-tmux-focus-events]
-checkout = git clone 'git@github.com:tmux-plugins/vim-tmux-focus-events.git' 'vim-tmux-focus-events'
-
 [pack/plugins/start/vim-one]
-checkout = git clone 'git@github.com:rakr/vim-one.git' 'vim-one'
+checkout = git clone 'https://github.com/rakr/vim-one.git' 'vim-one'
 
 [pack/plugins/start/vim-obsession]
-checkout = git clone 'git@github.com:tpope/vim-obsession.git' 'vim-obsession'
-
-[pack/plugins/start/taboo.vim]
-checkout = git clone 'git@github.com:gcmt/taboo.vim.git' 'taboo.vim'
-
-[pack/plugins/start/ayu-vim]
-checkout = git clone 'git@github.com:ayu-theme/ayu-vim.git' 'ayu-vim'
+checkout = git clone 'https://github.com/tpope/vim-obsession.git' 'vim-obsession'
 
 [pack/plugins/start/vim-gutentags]
-checkout = git clone 'git@github.com:ludovicchabant/vim-gutentags.git' 'vim-gutentags'
-
-[pack/plugins/start/vim-airline]
-checkout = git clone 'git@github.com:vim-airline/vim-airline.git' 'vim-airline'
-
-[pack/plugins/start/vim-airline-themes]
-checkout = git clone 'git@github.com:vim-airline/vim-airline-themes.git' 'vim-airline-themes'
+checkout = git clone 'https://github.com/ludovicchabant/vim-gutentags.git' 'vim-gutentags'
