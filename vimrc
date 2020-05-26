@@ -131,7 +131,6 @@ let g:taboo_tab_format=" %P (%W)%m "  " Use directory name as tab title.
 
 source ~/.vim/statusline.vim
 source ~/.vim/airline.vim
-source ~/.vim/hemisu.vim
 source ~/.vim/one.vim
 source ~/.vim/papercolor.vim
 source ~/.vim/startify.vim
