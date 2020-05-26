@@ -10,7 +10,7 @@ set lines=24
 set guicursor+=a:blinkon0  " Disable all cursor blinking.
 colorscheme one
 
-set guifont=Source\ Code\ Pro\ Medium\ 13
+set guifont=Source\ Code\ Variable\ Medium\ 13
 
 " Set to width suitable for editing one file.
 nnoremap <leader>1 :set columns=88<Enter>
