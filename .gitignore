@@ -6,3 +6,9 @@ black/*
 Startify
 session/*
 .gutentags_cache_dir/
+doc/*
+autoload/ctrlp
+autoload/ctrlp.vim
+autoload/youcompleteme.vim
+plugin/ctrlp.vim
+plugin/youcompleteme.vim
