@@ -120,15 +120,6 @@ augroup filetype_customizations
   endif
 augroup END
 
-" IndentLine
-" ==========
-let g:indentLine_enabled=0  " Do :IndentLinesEnable to show indent lines.
-
-
-" Tabs
-" ====
-let g:taboo_tab_format=" %P (%W)%m "  " Use directory name as tab title.
-
 source ~/.vim/statusline.vim
 source ~/.vim/airline.vim
 source ~/.vim/one.vim
