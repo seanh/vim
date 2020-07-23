@@ -58,7 +58,7 @@ let g:ctrlp_switch_buffer = '0'
 let g:ctrlp_match_current_file = 1
 let g:ctrlp_working_path_mode = 'wra'
 if executable("rg")
-  let g:ctrlp_user_command = 'rg --files --sort=none'
+  let g:ctrlp_user_command = 'rg %s --files --sort=none --color=never --hidden --ignore-file=/home/seanh/.ripgrep/ignore --smart-case'
   let g:ctrlp_use_caching = 0
 endif
 
