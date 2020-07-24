@@ -24,8 +24,23 @@ set splitbelow     " Open split windows below the current window, not above.
 set splitright     " Open split windows to the right of the current window, not to the left.
 set ttymouse=xterm2
 set sessionoptions+=globals
-set wildignore+=*.swp,*.bak,*.pyc,*.class,*.egg-info/*,*/node_modules/*,.coverage.*,.tox/*,.git/*,**/coverage/*
-
+set wildignore+=*.swp
+set wildignore+=*.bak
+set wildignore+=*.pyc
+set wildignore+=*.class
+set wildignore+=.coverage
+set wildignore+=.coverage.*
+set wildignore+=*.egg-info/*
+set wildignore+=node_modules/*
+set wildignore+=.tox/*
+set wildignore+=.git/*
+set wildignore+=coverage/*
+set wildignore+=.pytest_cache/*
+set wildignore+=__pycache__/*
+set wildignore+=.hypothesis/*
+set wildignore+=celerybeat-schedule.dat
+set wildignore+=celerybeat-schedule.dir
+set wildignore+=celerybeat.pid
 
 " Non-leader key mappings
 " =======================
