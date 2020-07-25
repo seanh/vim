@@ -39,3 +39,9 @@ checkout = git clone 'https://github.com/tpope/vim-obsession.git' 'vim-obsession
 
 [pack/plugins/start/vim-gutentags]
 checkout = git clone 'https://github.com/ludovicchabant/vim-gutentags.git' 'vim-gutentags'
+
+[pack/plugins/start/vim-textobj-entire]
+checkout = git clone 'git@github.com:kana/vim-textobj-entire.git' 'vim-textobj-entire'
+
+[pack/plugins/start/vim-textobj-user]
+checkout = git clone 'git@github.com:kana/vim-textobj-user.git' 'vim-textobj-user'
