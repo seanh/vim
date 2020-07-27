@@ -1,5 +1,6 @@
 import os
 import subprocess
+import sys
 
 
 def Settings(**kwargs):
@@ -21,8 +22,33 @@ def Settings(**kwargs):
         project_dir = os.path.split(project_dir)[0]
 
     if tox_dir:
-        # Create the tox testenv.
-        subprocess.call(["tox", "-c", project_dir, "--notest"])
-        return {"interpreter_path": os.path.join(tox_dir, "tests/bin/python")}
+        interpreter_path = os.path.join(tox_dir, "tests/bin/python")
+
+        # Try to create the tox testenv if it doesn't exist.
+        if not os.path.isfile(interpreter_path):
+            try:
+                subprocess.call(
+                    [
+                        os.path.expanduser("~/.pyenv/libexec/pyenv"),
+                        "exec",
+                        "tox",
+                        "-c",
+                        project_dir,
+                        "-e",
+                        "tests",
+                        "--notest",
+                    ],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                )
+            except Exception:
+                pass
+
+        if os.path.isfile(interpreter_path):
+            return {"interpreter_path": interpreter_path}
 
     return {}
+
+
+if __name__ == "__main__":
+    print(Settings(filename=os.path.abspath(sys.argv[1])))
