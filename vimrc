@@ -42,6 +42,22 @@ set wildignore+=celerybeat-schedule.dat
 set wildignore+=celerybeat-schedule.dir
 set wildignore+=celerybeat.pid
 
+" Use the system clipboard as the default register.
+set clipboard=unnamed,unnamedplus
+if has('unnamedplus')
+  " This makes Vim paste from the system clipboard register (the "+ or
+  " "quoteplus" register) by default and yank into *both* the system clipboard
+  " and the system selection ("* or "quotestar") registers by default.
+  "
+  " If you want to paste from the selection register instead of the clipboard,
+  " do "*p instead of just p.
+  set clipboard=unnamed,unnamedplus
+else
+  " If Vim lacks system clipboard register support then just use the system
+  " selection register by default instead.
+  set clipboard=unnamed
+endif
+
 " Non-leader key mappings
 " =======================
 " Spacebar enters command mode.
