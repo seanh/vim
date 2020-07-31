@@ -24,3 +24,10 @@ let g:gutentags_cache_dir = "~/.vim/.gutentags_cache_dir"
 
 " Exclude .tox dirs from being scanned for tags.
 let g:gutentags_ctags_exclude = ["*/.tox/*"]
+
+" Don't generate tags files automatically because it noticeably slows down Vim.
+" Run :GutentagsUpdate (current buffer only) or :GutentagsUpdate! (whole project)
+" manually instead.
+let g:gutentags_generate_on_missing = 0
+let g:gutentags_generate_on_new = 0
+let g:gutentags_generate_on_write = 0
