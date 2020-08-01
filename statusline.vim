@@ -23,6 +23,6 @@ set statusline+=%r
 :set statusline+=%=
 
 " The type of file in the buffer.
-set statusline+=%y
+"set statusline+=%y
 " Cursor position.
 set statusline+=\ %3l/%L:%-3v
