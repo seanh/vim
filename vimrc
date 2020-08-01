@@ -153,7 +153,7 @@ augroup filetype_customizations
 augroup END
 
 source ~/.vim/statusline.vim
-source ~/.vim/airline.vim
+"source ~/.vim/airline.vim
 source ~/.vim/one.vim
 source ~/.vim/youcompleteme.vim
 source ~/.vim/gutentags.vim
