@@ -1,6 +1,13 @@
 augroup colorscheme_customizations
   if has('autocmd')
-    autocmd ColorScheme one highlight EndOfBuffer guifg=bg
-    autocmd ColorScheme one highlight StatusLineNC guibg=#494b53 guifg=#fafafa
+    autocmd ColorScheme one call CustomizeColorSchemeOne()
   endif
 augroup END
+
+function CustomizeColorSchemeOne()
+  if &background == "light"
+    highlight EndOfBuffer  guifg=bg
+    highlight StatusLine   guifg=#494b53 guibg=#fafafa
+    highlight StatusLineNC guibg=#494b53 guifg=#fafafa
+  endif
+endfunction
