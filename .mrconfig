@@ -45,3 +45,6 @@ checkout = git clone 'git@github.com:kana/vim-textobj-entire.git' 'vim-textobj-e
 
 [pack/plugins/start/vim-textobj-user]
 checkout = git clone 'git@github.com:kana/vim-textobj-user.git' 'vim-textobj-user'
+
+[pack/plugins/start/vim-indent-object]
+checkout = git clone 'https://github.com/michaeljsmith/vim-indent-object' 'vim-indent-object'
