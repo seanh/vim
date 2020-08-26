@@ -48,3 +48,6 @@ checkout = git clone 'git@github.com:kana/vim-textobj-user.git' 'vim-textobj-use
 
 [pack/plugins/start/vim-indent-object]
 checkout = git clone 'https://github.com/michaeljsmith/vim-indent-object' 'vim-indent-object'
+
+[pack/plugins/start/taboo.vim]
+checkout = git clone 'git@github.com:gcmt/taboo.vim.git' 'taboo.vim'

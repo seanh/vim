@@ -158,6 +158,7 @@ source ~/.vim/one.vim
 source ~/.vim/youcompleteme.vim
 source ~/.vim/gutentags.vim
 source ~/.vim/black.vim
+source ~/.vim/taboo.vim
 
 " Exit insert mode by typing "jj" twice quickly.
 :imap jj <Esc>
