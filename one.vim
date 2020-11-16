@@ -5,8 +5,8 @@ augroup colorscheme_customizations
 augroup END
 
 function CustomizeColorSchemeOne()
+  highlight EndOfBuffer guifg=bg
   if &background == "light"
-    highlight EndOfBuffer  guifg=bg
     highlight StatusLine   guifg=#494b53 guibg=#fafafa
     highlight StatusLineNC guibg=#494b53 guifg=#fafafa
   endif
