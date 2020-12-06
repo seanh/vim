@@ -4,10 +4,14 @@ My Vim Config
 Installation
 ------------
 
+### Ubuntu 20.04
+
+Enable Ubuntu's "Community-maintained free and open-source
+software (universe)" option in the **Software & Updates** app,
+then:
+
 ```terminal
-sudo apt install vim-gtk3 vim-doc vim-youcompleteme vim-fugitive vim-ctrlp exuberant-ctags vim-airline black
-vam install youcompleteme ctrlp
-ln -s ~/Projects/vim .vim
-cd ~/.vim
-mr checkout
+sudo apt install --yes git
+git clone 'https://github.com/seanh/vim.git' ~/.vim
+~/.vim/install.sh
 ```
