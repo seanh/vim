@@ -10,3 +10,6 @@ cd ~/.vim/pack/plugins/start/YouCompleteMe
 git submodule update -j 5 --init --recursive
 python3 install.py
 cd -
+
+# The black plugin needs ensurepip from python3-venv.
+sudo apt install --yes python3-venv
