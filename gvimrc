@@ -19,6 +19,6 @@ nnoremap <leader>2 :set columns=177<Enter>
 " Set to width suitable for editing three files side-by-side.
 nnoremap <leader>3 :set columns=266<Enter>
 
-if filereadable(expand('~/Session.vim'))
-  exe 'silent source' '~/Session.vim'
-endif
+"if filereadable(expand('~/Session.vim'))
+"  exe 'silent source' '~/Session.vim'
+"endif
