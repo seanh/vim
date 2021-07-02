@@ -168,7 +168,3 @@ if executable("rg")
     set grepprg=rg\ --vimgrep\ --no-heading
     set grepformat=%f:%l:%c:%m,%f:%l:%m
 endif
-
-" Vim seems to think that my st terminal has a light background, but it's
-" actually dark.
-set background=light
