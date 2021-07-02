@@ -8,7 +8,7 @@ set sessionoptions+=resize
 set columns=88 " Just wide enough to fit Black's 88 chars per line.
 set lines=24
 set guicursor+=a:blinkon0  " Disable all cursor blinking.
-"colorscheme one
+colorscheme peachpuff
 
 set guifont=Source\ Code\ Pro\ 13,\ Monospace\ 13
 
