@@ -78,3 +78,6 @@ checkout = git clone 'https://github.com/SirVer/ultisnips.git' 'ultisnips'
 
 [pack/plugins/start/vim-snippets]
 checkout = git clone 'https://github.com/honza/vim-snippets.git' 'vim-snippets'
+
+[pack/plugins/start/vim-rhubarb]
+checkout = git clone 'https://github.com/tpope/vim-rhubarb.git' 'vim-rhubarb'
