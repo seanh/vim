@@ -169,12 +169,6 @@ if executable("rg")
     set grepformat=%f:%l:%c:%m,%f:%l:%m
 endif
 
-
-highlight EndOfBuffer guifg=bg
-highlight VertSplit   guifg=bg
-highlight VertSplit   guibg=fg
-if &background == "light"
-  highlight VertSplit    guibg=#dddddd
-  highlight StatusLine   guifg=#f9f9f9 guibg=#444444
-  highlight StatusLineNC guifg=#f9f9f9 guibg=#444444
-endif
+" Vim seems to think that my st terminal has a light background, but it's
+" actually dark.
+set background=light
